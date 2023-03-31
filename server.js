@@ -23,7 +23,7 @@ app.post('/bfhl', function(req, res) {
       else
         odd.push(val);
     }else{
-      alpha.push(val);
+      alpha.push(val.toUpperCase());
     }
   })
   res.json({"is_success":true, "user_id":userid, "email": email,"roll_number":roll, "odd_numbers":odd, "even_numbers":even, "alphabets":alpha});
