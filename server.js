@@ -26,7 +26,7 @@ app.post('/bfhl', function(req, res) {
       alpha.push(val);
     }
   })
-  res.json({"is_success":true, "userid":userid, "email": email,"roll_number":roll, "odd_numbers":JSON.stringify(odd), "even_numbers":JSON.stringify(even), "alphabets":alpha.toString()});
+  res.json({"is_success":true, "userid":userid, "email": email,"roll_number":roll, "odd_numbers":odd, "even_numbers":even, "alphabets":alpha});
 });
 
 
